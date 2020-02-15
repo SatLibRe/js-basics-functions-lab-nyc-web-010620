@@ -12,16 +12,15 @@ function distanceTravelledInFeet(pt1, pt2){
   return (264 * (pt1 < pt2 ? (pt2 - pt1) :  (pt1 - pt2)))
 }
 
-function calculatesFarePrice(start, destination){
-  let dtf = distanceTravelledInFeet(start, destination)
-  switch(dtf){
-    case dtf < 400: 
-      return 0;
-    case dtf > 400 && dtf < 2000:
-      return 2 * (dtf - 400); 
-    case dtf > 2000 && dtf < 2500:
-      return 25;
-    case dtf > 2500:
-      return('cannot travel that far')
-  }
+function calculatesFarePrice(start, destination) {
+    const dtf = distanceTravelledInFeet(start, destination);
+    if (dtf <= 400) {
+        return 0;
+    } else if (dtf > 400 && distance <= 2000) {
+        return .02 * (distance - 400);
+    } else if (distance > 2000 && distance <= 2500) {
+        return 25;
+    } else {
+        return 'cannot travel that far';
+    }
 }
