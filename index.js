@@ -20,6 +20,8 @@ function calculatesFarePrice(start, destination){
     case dtf > 400 && dtf < 2000:
       return 2 * (dtf - 400); 
     case dtf > 2000 && dtf < 2500:
-      return 
+      return 25;
+    case default:
+      
   }
 }
