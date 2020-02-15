@@ -5,5 +5,5 @@ function  distanceFromHqInBlocks(num){
 }
 
 function  distanceFromHqInFeet(num){
-  return(num < 42 ? (42 - num) : (num - 42))
+  return(distanceFromHqInBlocks(num) * 264)
 }
