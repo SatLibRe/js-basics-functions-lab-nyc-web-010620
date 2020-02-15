@@ -8,6 +8,6 @@ function  distanceFromHqInFeet(num){
   return(distanceFromHqInBlocks(num) * 264)
 }
 
-function distanceFromHqTravelledInFeet(pt1, pt2){
+function distanceTravelledInFeet(pt1, pt2){
   return (264 * (pt1 < pt2 ? (pt2 - pt1) :  (pt1 - pt2)))
 }
