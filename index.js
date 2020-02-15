@@ -1,5 +1,5 @@
 // Code your solution in this file!
 
-function  distanceFromHqInBlocks(d){
+function  distanceFromHqInBlocks(distance){
   return d
 }
