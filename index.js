@@ -1,5 +1,5 @@
 // Code your solution in this file!
 
-function  distanceFromHqInBlocks(pickUpLocation){
-  
+function  distanceFromHqInBlocks(num){
+  num - 42
 }
